@@ -6,7 +6,7 @@ ENV UDP2RAW_VER 20181113.0
 
 ENV SS_URL https://github.com/shadowsocks/shadowsocks-libev/archive/v$SS_VER.tar.gz
 ENV SS_DIR shadowsocks-libev-$SS_VER
-ENV KCP_URL https://github.com/xtaci/kcptun/releases/download/v${KCP_VER}/kcptun-linux-arm-${KCP_VER}.tar.gz
+ENV KCP_URL https://github.com/xtaci/kcptun/releases/download/v${KCP_VER}/kcptun-linux-arm7-${KCP_VER}.tar.gz
 ENV UDP2RAW_URL https://github.com/wangyu-/udp2raw-tunnel/releases/download/${UDP2RAW_VER}/udp2raw_binaries.tar.gz
 # Build shadowsocks-libev
 RUN set -ex \
