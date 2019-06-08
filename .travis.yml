@@ -21,6 +21,6 @@ jobs:
     - stage: test image
       script:
         - docker run --rm --privileged multiarch/qemu-user-static:register --reset;
-        - docker run --rm $IMAGE_NAME ss-redir --help
-        - docker run --rm $IMAGE_NAME client_linux_arm7 --help
-        - docker run --rm $IMAGE_NAME udp2raw_arm --help
+        - docker run --rm $IMAGE_NAME ss-redir --help;
+        - docker run --rm $IMAGE_NAME client_linux_arm7 --help;
+        - docker run --rm $IMAGE_NAME udp2raw_arm --help;
