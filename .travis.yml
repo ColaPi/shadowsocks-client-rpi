@@ -23,4 +23,3 @@ jobs:
         - docker run --rm --privileged multiarch/qemu-user-static:register --reset
         - docker run --rm $IMAGE_NAME ss-redir --help
         - docker run --rm $IMAGE_NAME client_linux_arm7 --help
-        - docker run --rm $IMAGE_NAME udp2raw_arm --help
