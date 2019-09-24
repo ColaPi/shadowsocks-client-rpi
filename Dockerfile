@@ -1,7 +1,7 @@
 FROM balenalib/armv7hf-alpine:latest-run
 
-ENV SS_VER 3.2.5
-ENV KCP_VER 20190905
+ENV SS_VER 3.3.1
+ENV KCP_VER 20190924
 ENV UDP2RAW_VER 20181113.0
 
 ENV SS_URL https://github.com/shadowsocks/shadowsocks-libev/archive/v$SS_VER.tar.gz
