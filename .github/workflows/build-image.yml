@@ -14,12 +14,9 @@ jobs:
 
       - name: build docker image
         run: |
+          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
           docker run --rm --privileged multiarch/qemu-user-static:register --reset
           docker build . -t colachen/shadowsocks-client-rpi:v`date +%Y%m%d` -t colachen/shadowsocks-client-rpi:latest
-
-      - name: push image to dockerhub
-        run: |
-          docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
           docker push colachen/shadowsocks-client-rpi:v`date +%Y%m%d`
           docker push colachen/shadowsocks-client-rpi:latest
         env:
