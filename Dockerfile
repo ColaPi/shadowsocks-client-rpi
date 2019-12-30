@@ -49,5 +49,6 @@ RUN set -ex \
     && rm -rf /tmp/repo
 
 COPY supervisord.conf /etc/
+COPY 01-kcptun.conf /etc/sysctl.d/
 
 CMD [ "/usr/bin/supervisord", "-c", "/etc/supervisord.conf" ]
